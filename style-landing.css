@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes RightToLeft{
+    from{
+        transform: translateX(400%);
+    }
+    to{
+        transform: translateX(-400%);
+    }
+}
+.logo-2{
+    width: 20%;
+    height: 15vh;
+    position: fixed;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease;
+    opacity: 0;
+}
+.scrolled{
+    opacity: 1;
+}
+.logo-2-container{
+    width: 60%;
+    height: 70%;
+    padding-left: 1rem;
+    background: #F0965A;
+    box-shadow: 0 8px 32px 0 rgba(75, 15, 15,0.10s);
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.logo-2 img {
+    width: 10vw;
+    height: 10vh;
+    object-fit: cover;
+}
+.logo{
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 10vw;
+    height: 10vh;
+    object-fit: cover;
+}
+.first-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/KIMBENTO-first-page.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.first-page-content{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+.first-page-content-image{
+    width: 50%;
+    height: 100%;
+}
+.first-page-content-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.first-page-content-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.tagline{
+    width: 100%;
+    height: 100%;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tagline span {
+    width: 60%;
+    font-size: 3.25vw;
+    color: white;
+}
+.content-text-button{
+    width: 50%;
+    height: 10%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.content-text-button span{
+    width: 60%;
+    height: 80%;
+    font-size: 1.5vw;
+    padding-top: 0.6rem;
+    border: 2px solid #6A9261;
+    background-color: #6A9261;
+    border-radius: 45px;
+}
+.about-us{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/KIMBENTO-second-page.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-us-title{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-title img{
+    width: 15vw;
+    height: 15vh;
+    object-fit: cover;
+}
+.about-us-content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-content-text{
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.context-text-title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.context-text-title span{
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    color: #423F3F;
+}
+.context-text{
+    width: 90%;
+    height: 60%;
+    text-align: justify;
+}
+.context-text span{
+    font-size: 1.5vw;
+    font-family: 'Open Sans', sans-serif;
+}
+.about-us-content-image{
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-content-image img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/KIMBENTO-third-page.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid red;
+}
+.menu-title{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+.menu-title img{
+    width: 15vw;
+    height: 15vh;
+    object-fit: cover;
+}
+.menu-content{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+.menu-list{
+    width: 87%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+}
+.list{
+    width: 80%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+}
+.image{
+    width: 15%;
+    height: 90%;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 2px solid red;
+}
+.menu-image1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.desc{
+    width: 80%;
+    height: 90%;
+    border: 2px solid red;
+}
+@media(max-width: 570px){
+    .logo-2{
+        width: 45%;
+        height: 15vh;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        transition: 300ms ease;
+        opacity: 0;
+    }
+    .scrolled{
+        opacity: 1;
+    }
+    .logo-2-container{
+        width: 60%;
+        height: 70%;
+        padding-left: 1rem;
+        background: #F0965A;
+        box-shadow: 0 8px 32px 0 rgba(75, 15, 15,0.10s);
+        border-radius: 20px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .logo-2 img {
+        width: 20vw;
+        height: 10vh;
+        object-fit: cover;
+    }
+    .logo{
+        width: 100%;
+        height: 10vh;
+    }
+    .logo img {
+        width: 30vw;
+        height: 10vh;
+        object-fit: cover;
+    }
+    .first-page{
+        background-size: 200%;
+        background-position: top center;
+    }
+    .first-page-content{
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .first-page-content-image{
+        width: 100%;
+        height: 50%;
+    }
+    .first-page-content-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .first-page-content-text{
+        width: 100%;
+        height: 50%;
+    }
+    .tagline span {
+        width: 70%;
+        font-size: 8vw;
+        color: #F0965A;
+    }
+    .content-text-button{
+        width: 50%;
+        height: 15%;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+    .content-text-button span{
+        width: 70%;
+        height: 90%;
+        font-size: 5vw;
+        padding-top: 0.2rem;
+        color: white;
+        border: 2px solid #6A9261;
+        background-color: #6A9261;
+        border-radius: 45px;
+    }
+    .about-us-title img{
+        width:60%;
+        height: 80%;
+        object-fit: cover;
+    }
+    .about-us-content{
+        flex-direction: column;
+    }
+    .about-us-content-text{
+        width: 100%;
+        height: 45%;
+    }
+    .context-text-title{
+        width: 70%;
+        height: 20%;
+    }
+    .context-text-title span{
+        font-size: 5vw;
+    }
+    .context-text{
+        width: 70%;
+        height: 70%;
+        text-align: justify;
+    }
+    .context-text span{
+        font-size: 3vw;
+    }
+    .about-us-content-image{
+        width: 100%;
+        height: 45%;
+    }
+    .menu-title img{
+        width: 30vw;
+        height: 15vh;
+        object-fit: cover;
+    }
+}      
