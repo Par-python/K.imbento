@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: center;
     transition: 300ms ease;
+    z-index: 1;
     opacity: 0;
 }
 .scrolled{
@@ -281,6 +282,82 @@
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
+.contacts{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-content{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-text-title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contacts-text-title span{
+    font-size: 5vw;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 2rem;
+    color: #6A9261;
+}
+.contacts-text-content{
+    width: 100%;
+    height: 25%;
+    padding: 2rem;
+}
+.contacts-text-content span{
+    font-size: 1.25vw;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    color: #423F3F;
+}
+.contacts-text-image{
+    width: 100%;
+    height: 20%;
+}
+.contacts-text-image img{
+    width: 30%;
+    height: 100%;
+    margin-left: 2rem;
+    object-fit: contain;
+}
+.contacts-logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-logo img{
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 3px -1px 43px -2px rgba(75,15,15,0.58);
+    -webkit-box-shadow: 3px -1px 43px -2px rgba(75,15,15,0.58);
+    -moz-box-shadow: 3px -1px 43px -2px rgba(75,15,15,0.58);
+}
+
 @media(max-width: 570px){
     .logo-2{
         width: 45%;
@@ -398,6 +475,10 @@
         width: 100%;
         height: 45%;
     }
+    .menu-title{
+        width: 100%;
+        height: 10vh;
+    }
     .menu-title img{
         width: 30vw;
         height: 15vh;
@@ -405,7 +486,7 @@
     }
     .menu-content{
         width: 100%;
-        height: 80vh;
+        height: 90vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -429,7 +510,7 @@
     }
     .image{
         width: 90%;
-        height: 90%;
+        height: 85%;
         border-radius: 20px;
         box-shadow: 3px -1px 43px -2px rgba(75,15,15,0.58);
         -webkit-box-shadow: 3px -1px 43px -2px rgba(75,15,15,0.58);
@@ -469,5 +550,80 @@
         text-align: justify;
         font-family: 'Open Sans', sans-serif;
         color: white;
+    }
+    .contacts{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacts-content{
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacts-text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacts-text-title{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .contacts-text-title span{
+        font-size: 8vw;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 2rem;
+        color: #6A9261;
+    }
+    .contacts-text-content{
+        width: 100%;
+        height: 50%;
+        padding: 2rem;
+    }
+    .contacts-text-content span{
+        font-size: 3vw;
+        text-align: justify;
+        font-family: 'Open Sans', sans-serif;
+        color: #423F3F;
+    }
+    .contacts-text-image{
+        width: 100%;
+        height: 20%;
+    }
+    .contacts-text-image img{
+        width: 30%;
+        height: 100%;
+        margin-left: 2rem;
+        object-fit: contain;
+    }
+    .contacts-logo{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacts-logo img{
+        width: 100%;
+        height: 80%;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 3px -1px 43px -2px rgba(75,15,15,0.58);
+        -webkit-box-shadow: 3px -1px 43px -2px rgba(75,15,15,0.58);
+        -moz-box-shadow: 3px -1px 43px -2px rgba(75,15,15,0.58);
     }
 }      
