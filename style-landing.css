@@ -11,6 +11,9 @@
         transform: translateX(-400%);
     }
 }
+html {
+    scroll-behavior: smooth;
+}
 .logo-2{
     width: 20%;
     height: 15vh;
@@ -113,6 +116,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
+}
+.content-text-button a{
+    text-decoration: none;
+    color: white;
 }
 .content-text-button span{
     width: 60%;
@@ -349,8 +356,8 @@
     align-items: center;
 }
 .contacts-logo img{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 3px -1px 43px -2px rgba(75,15,15,0.58);
